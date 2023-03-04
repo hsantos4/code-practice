@@ -9,6 +9,7 @@
   html, body {
     margin: 0;
     padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
   
   /* Remove list styles (bullets/numbers) */
@@ -65,23 +66,45 @@ p {
 }
 
   /* This is the header for the website */
-
-  .logo {
-    width: 100px;
+  .logo img{
+    width: 91px;
   }
+
 .nav-container {
-    background-color: rgb(215, 215, 215);
-    padding: 4px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    background-color: rgba(78, 75, 75, 0.473);
+    color: white;
+    height: 88px;
+    padding: 0 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
 }
 
 .nav-group-lg-screen {
-    list-style: none;
-    display: none;
+    display: flex;
+    justify-content: space-around;
+    width: 10%;
 }
+
+.nav-group-lg-screen li {
+    list-style: none;
+}
+.nav-group-lg-screen a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3 ease;
+}
+.nav-group-lg-screen a:hover {
+    color: #db0f0f;
+}
+
 
 .nav-list {
     color: #1b1b1b;
@@ -125,6 +148,7 @@ p {
 
 .btn {
     margin: auto auto;
+    cursor: pointer;
 }
 
 /* This is the benefits section for the homepage */
