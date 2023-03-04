@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Weather App</title>
+    <title>Practice website</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,6 +14,12 @@
             <img class="logo" src="images/logo.jpg" alt="Two squares overlapping">
         </div>
 
+         <!-- On mobile screens this will show -->
+         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#1D2A1D" class="mobileMenu bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+        </svg>
+
+        <!-- This navigation is for larger screens -->
         <ul class="nav-group-lg-screen ">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
@@ -21,11 +27,8 @@
             <li><a href="#">Send Us Deals</a></li>
         </ul>
     </nav>
-        <!-- The mobile hamburger menu -->
-        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#ffffff" class="bi bi-list" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-        </svg>
-  
+       
+  <!-- We need to use Javascript to dynamically create a menu that is created when someone clicks on the mobile hamburger menu -->
 
 
     <section class="homepage-hero-section">
@@ -38,7 +41,7 @@
             <div class="btn">Send Us Those Deals</div>
         </div>
     </section>
-
+<h2 style="text-align:center;">The benefits</h2>
     <section class="benefits-grid-section">
        
         <div class="benefits">
@@ -59,6 +62,7 @@
     </section>
 
 
+    <!-- We need a footer that is responsive -->
    
 
     <script src="index.js"></script>

@@ -85,10 +85,19 @@ p {
     z-index: 999;
 }
 
+.mobileMenu {
+    border: 1px solid #b3b3b3;
+    background-color: #dadada;
+}
+/* when someone clicks on the mobile menu the color will change */
+.mobileMenu:active {
+    background-color: #5e5e5e;
+}
+
+
+/* We make this display none because we dont want to show the navigation menu for larger screens */
 .nav-group-lg-screen {
-    display: flex;
-    justify-content: space-around;
-    width: 10%;
+    display: none;
 }
 
 .nav-group-lg-screen li {
@@ -129,6 +138,7 @@ p {
   background-color: #f1f1f1;
    height: 100vh;
    padding: 10px;
+   margin-top: 88px;
 }
 
 .homepage-image-container {
@@ -174,13 +184,17 @@ p {
     display: none;
 }
 
-/* Media queries */
+/* Media queries this makes websites responsive  */
 
 @media screen and (min-width: 768px) {
+     /* This piece of codes makes the menu navigation for larger screens visible for screeens larger than 768px */
 .nav-group-lg-screen {
-    display: block;
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
 }
 
+/* This code makes the hamburger on mobile not visible for screens larger than 768px */
 .bi {
     display: none;
 }
